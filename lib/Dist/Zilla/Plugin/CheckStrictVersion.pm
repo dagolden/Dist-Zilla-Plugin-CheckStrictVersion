@@ -62,7 +62,7 @@ sub before_release {
 
 1;
 
-=for Pod::Coverage BUILD
+=for Pod::Coverage before_release
 
 =head1 SYNOPSIS
 
