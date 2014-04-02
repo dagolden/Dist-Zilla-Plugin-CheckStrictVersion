@@ -76,6 +76,19 @@ In your F<dist.ini> file:
 This module enforces strict versions, with optional enforcement of 'decimal' or 'tuple'
 (a.k.a 'dotted decimal') forms.
 
+As a reminder, here are the rules for strict versions from L<version::Internals>:
+
+    v1.234.5
+        For dotted-decimal versions, a leading 'v' is required, with three
+        or more sub-versions of no more than three digits. A leading 0
+        (zero) before the first sub-version (in the above example, '1') is
+        also prohibited.
+
+    2.3456
+        For decimal versions, an integer portion (no leading 0), a decimal
+        point, and one or more digits to the right of the decimal are all
+        required.
+
 =head1 SEE ALSO
 
 =for :list
